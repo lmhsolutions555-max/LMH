@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | LMH Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .accordion-header {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: var(--transition);
+        }
+
+        .accordion-header:hover {
+            background: var(--bg-light);
+        }
+
+        .accordion-header h3 {
+            font-size: 1.1rem;
+            margin: 0;
+            color: var(--secondary);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: var(--bg-light);
+        }
+
+        .accordion-content p {
+            padding: 25px;
+            margin: 0;
+            color: var(--text-dark);
+        }
+
+        .accordion-item.active .accordion-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="LMH Solutions Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="faq.html" class="nav-link active">FAQs</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="tel:+917665021213" class="btn btn-secondary">
+                    <i data-lucide="phone"></i> Call Now
+                </a>
+                <a href="https://wa.me/917665021213" target="_blank" class="btn btn-whatsapp">
+                    <i data-lucide="message-circle"></i> WhatsApp
+                </a>
+            </div>
+            <div class="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="padding-top: 160px; min-height: 400px; padding-bottom: 60px;">
+        <div class="container text-center">
+            <h1>Frequently Asked Questions</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Answers to common questions about our
+                services.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section">
+        <div class="container">
+            <div class="accordion">
+                <!-- 1. Service Area -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What is your service area?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We provide our services all over India, covering major cities and industrial hubs with a
+                            robust network of technicians.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Warranty -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What warranty do you offer?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Warranty varies by product and component. Most of our systems come with a standard
+                            manufacturer warranty plus our service guarantee. Please contact us for specific product
+                            details.</p>
+                    </div>
+                </div>
+
+                <!-- 3. AMC -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you provide AMC (Annual Maintenance Contract)?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we offer comprehensive AMC plans for both water treatment and solar energy systems to
+                            ensure they run efficiently year-round.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Installation Time -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How long does installation take?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>For most domestic systems, installation is completed within 24-48 hours after the site
+                            survey. Commercial and industrial projects may take longer depending on complexity.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Emergency Support -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer emergency breakdown support?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we have a dedicated team for emergency breakdowns to minimize downtime for your critical
+                            systems.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Solar System Types -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What types of solar systems are available?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We offer On-Grid, Off-Grid, and Hybrid solar systems tailored to your energy consumption and
+                            backup requirements.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Bill Savings -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How much can I save on electricity bills?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Savings depend on your system size and usage, but typically our customers see a reduction of
+                            70-90% in their electricity bills.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Contact Info -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How can I contact you?</h3>
+                        <i data-lucide="chevron-down" style="width: 20px;"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>You can reach us via Phone or WhatsApp at +91 7665021213 or email us at
+                            lmhsolutions555@gmail.com.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 style="color: white; font-size: 1.5rem;">LMH Solutions</h4>
+                    <p style="color: rgba(255,255,255,0.7);">Smarter Solutions – Greener Tomorrow</p>
+                    <p>Service Area: All over India</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <a href="tel:+917665021213"><i data-lucide="phone" style="width: 16px; display: inline;"></i> +91
+                        7665021213</a>
+                    <a href="mailto:lmhsolutions555@gmail.com"><i data-lucide="mail"
+                            style="width: 16px; display: inline;"></i> lmhsolutions555@gmail.com</a>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: rgba(255,255,255,0.6);">Warranty varies by
+                        product.<br>Call or WhatsApp for details.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 LMH Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
